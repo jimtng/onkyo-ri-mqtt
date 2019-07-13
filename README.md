@@ -21,11 +21,11 @@ I use a Wemos D1 Mini and connect its D2 pin directly to RI using a 3.5mm mono p
 
 ## Relevant RI Commands
 
-0x1A0 Switch Input to Video 3
+- 0x1A0 Switch Input to Video 3
 When Video 3 is selected:
-0x1A2 Volume Up
-0x1A3 Volume Down
-0x1A4 Mute
-0x1A5 Unmute
-0x1AE Standby
-0x1AF Turn on and switch to Video 3
+- 0x1A2 Volume Up
+- 0x1A3 Volume Down
+- 0x1A4 Mute
+- 0x1A5 Unmute
+- 0x1AE Standby
+- 0x1AF Turn on and switch to Video 3
