@@ -19,6 +19,17 @@ I use a Wemos D1 Mini and connect its D2 pin directly to RI using a 3.5mm mono p
 - [Homie v3](https://github.com/homieiot/homie-esp8266)
 - [Onkyo-RI library](https://github.com/docbender/Onkyo-RI)
 
+## Setup
+
+Please see [Homie Setup](https://homieiot.github.io/homie-esp8266/docs/develop-v3/quickstart/getting-started/)
+
+## MQTT Usage
+
+Two MQTT topics are exposed for writing:
+- `homie/device-name/onkyo/power/set`: `ON`|`OFF`. Internally this sends the command 0x1AF to turn it on and 0x1AE to turn it off. I've set the audio input to Video 3 for this purpose.
+
+- `homie/device-name/onkyo/command/set`: A string representation of the numeric value to be sent to the RI port. It can be in either decimal or Hexadecimal notation, e.g. `0x20`
+
 ## Relevant RI Commands
 
 - 0x1A0 Switch Input to Video 3
